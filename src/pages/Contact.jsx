@@ -45,7 +45,7 @@ const contactMethods = [
   {
     icon: <ContactPageIcon fontSize="large" sx={{ color: "secondary.main" }} />,
     value: data.links.cv.label,
-    href: `/my-portfolio${data.links.cv.url}`,
+    href: data.links.cv.url,
   },
 ];
 

@@ -65,7 +65,7 @@ This is my portfolio website built using React and Vite. It showcases my project
 
 ## Usage
 
-Open your browser and go to `http://localhost:5173/my-portfolio` to see the website in action.
+Open your browser and go to `http://localhost:5173` to see the website in action.
 
 ## Deployment
 

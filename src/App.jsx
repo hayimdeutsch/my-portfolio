@@ -20,6 +20,8 @@ const App = () => {
         sx={{
           flexGrow: 1,
           minHeight: "100vh",
+          minWidth: "300px",
+          overflowX: "scroll",
           overflowY: "auto",
           color: "text.primary",
           alignContent: "center",
