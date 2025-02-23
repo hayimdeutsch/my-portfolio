@@ -118,7 +118,7 @@ const App = () => {
           alignContent: "center",
         }}
       >
-        <Router>
+        <Router basename="/my-portfolio">
           <Navbar />
           <Box
             sx={{
