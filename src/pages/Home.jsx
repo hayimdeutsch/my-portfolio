@@ -70,7 +70,7 @@ const Home = () => {
         <Avatar
           alt="Programmer Animation"
           src={Programmer}
-          sx={{ width: 500, height: 500 }}
+          sx={{ width: { xs: 300, md: 400 }, height: { xs: 400, md: 500 } }}
         />
       </Box>
     </Box>
