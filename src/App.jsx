@@ -21,7 +21,7 @@ const App = () => {
           flexGrow: 1,
           minHeight: "100vh",
           minWidth: "350px",
-          overflowX: "scroll",
+          overflowX: "auto",
           overflowY: "auto",
           color: "text.primary",
           alignContent: "center",
