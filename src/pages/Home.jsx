@@ -26,12 +26,16 @@ const Home = () => {
           flexDirection: "column",
         }}
       >
-        <Typography variant="body1" color="textTertiary" >
+        <Typography variant="body1" color="textTertiary">
           Hi, my name is
         </Typography>
-        <Typography variant="h2" color="tertiary.main">Hayim Deutsch</Typography>
-        <Typography variant="h4"color="textTertiary">a developer focused on innovative solutions</Typography>
-        <Typography variant="body1" color="textSecondary" mt={3} >
+        <Typography variant="h2" color="tertiary.main">
+          Hayim Deutsch
+        </Typography>
+        <Typography variant="h4" color="textTertiary">
+          a developer focused on innovative solutions
+        </Typography>
+        <Typography variant="body1" color="textSecondary" mt={3}>
           I'm a full-stack developer passionate about creating scalable
           applications that solve real-world problems.
         </Typography>
