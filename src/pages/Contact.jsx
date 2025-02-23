@@ -45,7 +45,7 @@ const contactMethods = [
   {
     icon: <ContactPageIcon fontSize="large" sx={{ color: "secondary.main" }} />,
     value: data.links.cv.label,
-    href: data.links.cv.url,
+    href: `/my-portfolio${data.links.cv.url}`,
   },
 ];
 
@@ -55,7 +55,7 @@ const Contact = () => {
       <Typography
         variant="h3"
         color="tertiary.dark"
-        sx={{ textAlign: "center" }}
+        sx={{ textAlign: "center", textTransform: "uppercase" }}
       >
         Contact Me
       </Typography>

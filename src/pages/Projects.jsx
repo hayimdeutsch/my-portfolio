@@ -61,7 +61,7 @@ const Projects = () => {
         <Button
           variant="contained"
           color="secondary"
-          href={data.cv}
+          href={`/my-portfolio${data.cv}`}
           target="_blank"
           rel="noopener noreferrer"
           sx={{ mx: 2 }}
