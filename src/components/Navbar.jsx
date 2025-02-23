@@ -16,6 +16,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { Router, Link as RouterLink } from "react-router-dom";
 import { useTheme } from "@mui/material/styles";
+import Logo from "../assets/Logo.png";
 
 const pages = [
   { name: "Home", to: "/" },
@@ -26,11 +27,11 @@ const pages = [
 
 const links = [
   {
-    icon: <LinkedInIcon sx={{ fontSize: "large", color: "white" }} />,
+    icon: <LinkedInIcon fontSize="large" sx={{color: "whitesmoke"}} />,
     href: "https://linkedin.com/in/hayim-deutsch",
   },
   {
-    icon: <GitHubIcon sx={{ fontSize: "large", color: "white" }} />,
+    icon: <GitHubIcon fontSize="large" sx={{color: "whitesmoke"}} />,
     href: "https://github.com/hayimdeutsch",
   },
 ];
@@ -135,6 +136,14 @@ const Navbar = () => {
             >
               <MenuIcon />
             </IconButton>
+            <RouterLink to="/">
+              <Box
+                component="img"
+                src={Logo}
+                alt="Logo"
+                sx={{ height: 30, cursor: "pointer" }}
+              />
+            </RouterLink>
             <Drawer
               variant="temporary"
               open={drawerOpen}
@@ -169,7 +178,7 @@ const Navbar = () => {
             <RouterLink to="/">
               <Box
                 component={"img"}
-                src="/Logo.png"
+                src={Logo}
                 alt="Logo"
                 sx={{
                   width: scrolling ? 50 : 80,
@@ -181,7 +190,7 @@ const Navbar = () => {
 
             <Box sx={{ flexGrow: 1 }} />
 
-            <Box sx={{ display: "flex", gap: 2 }}>
+            <Box sx={{ display: "flex", gap: 2, alignItems: "center", pr: 2 }}>
               {pages.map((page, index) => (
                 <Link
                   component={RouterLink}

@@ -5,6 +5,7 @@ import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import { Link } from "react-router-dom";
 import Avatar from "@mui/material/Avatar";
+import Programmer from "../assets/Programmer.png";
 
 const Home = () => {
   return (
@@ -68,7 +69,7 @@ const Home = () => {
       >
         <Avatar
           alt="Programmer Animation"
-          src="/Programmer.png"
+          src={Programmer}
           sx={{ width: 500, height: 500 }}
         />
       </Box>

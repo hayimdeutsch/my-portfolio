@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Typography, Button } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 import Project from "../components/Project";
-import data from "../../myData.js";
+import data from "../../myData.json";
 
 const Projects = () => {
   const projects = data.projects;

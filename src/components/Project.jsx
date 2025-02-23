@@ -6,7 +6,6 @@ import {
   Grid2 as Grid,
   List,
   ListItem,
-  ListItemIcon,
   ListItemText,
 } from "@mui/material";
 import { styled } from "@mui/system";

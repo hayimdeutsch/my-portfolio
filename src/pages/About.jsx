@@ -3,22 +3,36 @@ import { Box, Button, Typography } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 import Slider from "react-slick";
 import SkillItem from "../components/SkillItem";
+import JavaIcon from "../assets/icons/java.png";
+import CIcon from "../assets/icons/c.png";
+import JavaScriptIcon from "../assets/icons/javascript.png";
+import HTMLIcon from "../assets/icons/html.png";
+import CSSIcon from "../assets/icons/css.png";
+import MySQLIcon from "../assets/icons/mysql.png";
+import MongoDBIcon from "../assets/icons/mongodb.png";
+import NodeIcon from "../assets/icons/node.png";
+import ReactIcon from "../assets/icons/react.png";
+import GitIcon from "../assets/icons/git.png";
+import DockerIcon from "../assets/icons/docker.png";
+import PostmanIcon from "../assets/icons/postman.png";
+import AWSIcon from "../assets/icons/aws.png";
+import LinuxIcon from "../assets/icons/linux.png";
 
 const skills = [
-  { name: "Java", icon: "/icons/java.png" },
-  { name: "C", icon: "/icons/c.png" },
-  { name: "JavaScript", icon: "/icons/javascript.png" },
-  { name: "HTML", icon: "/icons/html.png" },
-  { name: "CSS", icon: "/icons/css.png" },
-  { name: "MySQL", icon: "/icons/mysql.png" },
-  { name: "MongoDB", icon: "/icons/mongodb.png" },
-  { name: "Node.js", icon: "/icons/node.png" },
-  { name: "React", icon: "/icons/react.png" },
-  { name: "Git", icon: "/icons/git.png" },
-  { name: "Docker", icon: "/icons/docker.png" },
-  { name: "Postman", icon: "/icons/postman.png" },
-  { name: "AWS", icon: "/icons/aws.png" },
-  { name: "Linux", icon: "/icons/linux.png" },
+  { name: "Java", icon: JavaIcon },
+  { name: "C", icon: CIcon },
+  { name: "JavaScript", icon: JavaScriptIcon },
+  { name: "HTML", icon: HTMLIcon },
+  { name: "CSS", icon: CSSIcon },
+  { name: "MySQL", icon: MySQLIcon },
+  { name: "MongoDB", icon: MongoDBIcon },
+  { name: "Node.js", icon: NodeIcon },
+  { name: "React", icon: ReactIcon },
+  { name: "Git", icon: GitIcon },
+  { name: "Docker", icon: DockerIcon },
+  { name: "Postman", icon: PostmanIcon },
+  { name: "AWS", icon: AWSIcon },
+  { name: "Linux", icon: LinuxIcon },
 ];
 
 const About = () => {
