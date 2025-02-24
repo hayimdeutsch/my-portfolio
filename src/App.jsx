@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
@@ -14,36 +14,37 @@ import "slick-carousel/slick/slick-theme.css";
 
 const App = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Box
-        sx={{
-          flexGrow: 1,
-          minHeight: "100vh",
-          minWidth: "350px",
-          overflowX: "auto",
-          overflowY: "auto",
-          color: "text.primary",
-          alignContent: "center",
-        }}
-      >
-        <Navbar />
+    <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
         <Box
           sx={{
-            pt: { xs: 8, md: 16 },
-            pb: { xs: 6, md: 10 },
-            px: { xs: 4, md: 20 },
+            flexGrow: 1,
+            minHeight: "100vh",
+            minWidth: 300,
+            overflowY: "auto",
+            color: "text.primary",
+            alignContent: "flex-start",
           }}
         >
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
+          <Navbar />
+          <Box
+            sx={{
+              pt: { xs: 8, sm: 16 },
+              pb: { xs: 6, md: 10 },
+              px: { xs: 6, sm: 8, md: 20 },
+            }}
+          >
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </Box>
         </Box>
-      </Box>
-    </ThemeProvider>
+      </ThemeProvider>
+    </BrowserRouter>
   );
 };
 

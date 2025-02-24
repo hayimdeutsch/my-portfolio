@@ -71,7 +71,7 @@ const Contact = () => {
       >
         <Box>
           {" "}
-          <Typography sx={{ textAlign: "left", mb: 2 }}>
+          <Typography sx={{ textAlign: "left", mb: 2, mt: 2 }}>
             Feel free to reach out to me through any of the following methods:
           </Typography>
           <List>

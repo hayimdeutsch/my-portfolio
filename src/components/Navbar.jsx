@@ -17,6 +17,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import { Router, Link as RouterLink } from "react-router-dom";
 import { useTheme } from "@mui/material/styles";
 import Logo from "../assets/Logo.png";
+import data from "../../myData.json";
 
 const pages = [
   { name: "Home", to: "/" },
@@ -27,12 +28,12 @@ const pages = [
 
 const links = [
   {
-    icon: <LinkedInIcon fontSize="large" sx={{color: "whitesmoke"}} />,
-    href: "https://linkedin.com/in/hayim-deutsch",
+    icon: <LinkedInIcon fontSize="large" sx={{ color: "whitesmoke" }} />,
+    href: data.links.linkedin.url,
   },
   {
-    icon: <GitHubIcon fontSize="large" sx={{color: "whitesmoke"}} />,
-    href: "https://github.com/hayimdeutsch",
+    icon: <GitHubIcon fontSize="large" sx={{ color: "whitesmoke" }} />,
+    href: data.links.github.url,
   },
 ];
 
@@ -57,7 +58,7 @@ const Navbar = () => {
   }, []);
 
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   const handleDrawerToggle = () => {
     setDrawerOpen(!drawerOpen);
@@ -80,7 +81,7 @@ const Navbar = () => {
         }}
       >
         <IconButton onClick={handleDrawerToggle}>
-          <CloseIcon fontSize="large" />
+          <CloseIcon fontSize="large" sx={{ color: "white" }} />
         </IconButton>
       </Box>
       <Box
@@ -150,12 +151,6 @@ const Navbar = () => {
               onClose={handleDrawerToggle}
               ModalProps={{
                 keepMounted: true,
-              }}
-              sx={{
-                "& .MuiDrawer-paper": {
-                  width: "100vw",
-                  height: "100vh",
-                },
               }}
             >
               {drawer}

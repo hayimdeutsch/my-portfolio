@@ -44,6 +44,7 @@ const Projects = () => {
               details={project.details}
               skills={project.skills}
               repoUrl={project.repoUrl}
+              demoUrl={project.demoUrl}
             />
           </Box>
         ))}

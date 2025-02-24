@@ -24,7 +24,7 @@ const DiamondListItem = styled(ListItem)(({ theme }) => ({
   },
 }));
 
-const Project = ({ title, description, details, skills, repoUrl }) => {
+const Project = ({ title, description, details, skills, repoUrl, demoUrl }) => {
   return (
     <Box>
       <Typography variant="h5" gutterBottom>
@@ -56,17 +56,30 @@ const Project = ({ title, description, details, skills, repoUrl }) => {
           </Grid>
         ))}
       </Grid>
-      {repoUrl && (
-        <Button
-          variant="contained"
-          color="secondary"
-          href={repoUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View Repo
-        </Button>
-      )}
+      <Box sx={{ display: "flex", gap: 2 }}>
+        {repoUrl && (
+          <Button
+            variant="contained"
+            color="secondary"
+            href={repoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Repo
+          </Button>
+        )}
+        {demoUrl && (
+          <Button
+            variant="contained"
+            color="secondary"
+            href={demoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Demo
+          </Button>
+        )}
+      </Box>
     </Box>
   );
 };
